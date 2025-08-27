@@ -54,3 +54,9 @@ button:hover {
   background: #000;
   color: #fff;
 }
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #000;
+}
+
