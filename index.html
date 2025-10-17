@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>D20Roll</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animated D20 Dice</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="dice-container">
-    <div class="dice-face" id="dice">🎲</div>
-    <button onclick="rollDice()">Roll D20</button>
+  <h1 id="diceRollHeading">Animated D20 Dice Roller</h1>
+
+  <div class="dice-container" role="region" aria-labelledby="diceRollHeading" aria-describedby="diceDescription">
+    <p id="diceDescription" class="visually-hidden">
+      This tool simulates rolling a 20-sided die. Press the button to roll and view the result.
+    </p>
+
+    <div class="dice-face" id="dice" role="img" aria-label="D20 dice face showing current roll result">🎲</div>
+    <button onclick="rollDice()" aria-label="Roll the 20-sided die">Roll D20</button>
   </div>
 
-</body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+  <script src="./script.js"></script>
 </body>
 </html>
